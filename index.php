@@ -16,6 +16,9 @@
                 case 'form':{
                     require_once 'view/form.php';
                     break;
+                }case 'registro':{
+                    require_once 'view/registro.php';
+                    break;
                 }default:{
                     require_once 'view/default.php';
                 }   break;

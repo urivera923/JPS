@@ -56,3 +56,23 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE usuario if not exist usuario{
+  id_usuario if not null auto_increment primary key,
+  nombre_usuario varchar(40) no null,
+  paterno_usuario varchar(40) no null,
+  materno_usuario varchar(40) no null,
+  fecha_nacimiento_usuario date no null,
+  telefono_usuario varchar(45) no null,
+  carrera_usuario varchar(45) no null,
+  mail_usuario varchar(45) no null,
+  password_usuario varchar(45) no null, 
+  subio_archivos int default 0,
+  dda_autorizado int default 0,
+  rf_autorizo int default 0,
+  hablitar_examen int default 0,
+  calificacion_usuario int default 0,
+  rol int not null default 0
+
+
+}ENGINE=InnoDB;
